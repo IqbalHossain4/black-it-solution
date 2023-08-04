@@ -12,9 +12,9 @@ const SubNavber = () => {
   return (
     <div className="navBer">
       <div className="black__container ">
-        <div className="flex items-center justify-between">
+        <div className="lg:flex items-center justify-between">
           {/* contact info */}
-          <div className="text-white flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-6 text-white ">
             <span className="flex items-center gap-2">
               <FaMailBulk /> <p>info@blackmail.com</p>
             </span>
@@ -24,7 +24,7 @@ const SubNavber = () => {
             </span>
           </div>
           {/* social info */}
-          <div className="text-white flex items-center gap-4">
+          <div className="flex items-center justify-center text-center  gap-4 text-white">
             <a href="#">
               <FaFacebook />
             </a>
