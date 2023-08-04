@@ -9,13 +9,13 @@ const Navber = () => {
   };
   const navOptions = (
     <>
-      <li className="text-white">HOME</li>
-      <li className="text-white">ABOUT</li>
-      <li className="text-white">SERVICES</li>
-      <li className="text-white">PROJECTS</li>
-      <li className="text-white">SHOP</li>
-      <li className="text-white">BLOG</li>
-      <li className="text-white">CONTACT US</li>
+      <li className="text-black">HOME</li>
+      <li className="text-black">ABOUT</li>
+      <li className="text-black">SERVICES</li>
+      <li className="text-black">PROJECTS</li>
+      <li className="text-black">SHOP</li>
+      <li className="text-black">BLOG</li>
+      <li className="text-black">CONTACT US</li>
     </>
   );
 
@@ -28,7 +28,7 @@ const Navber = () => {
               <div className="w-[60px] h-[60px]">
                 <img src={"logo.png"} alt="black_it_solutions" />
               </div>
-              <p className="text-xs">IT Service & Technology </p>
+              <p className="text-xs text-black">IT Service & Technology </p>
             </div>
           </div>
           <button
@@ -50,10 +50,10 @@ const Navber = () => {
               ></path>
             </svg>
           </button>
-          <div className="hidden lg:flex space-x-4">{navOptions}</div>
+          <ul className="hidden lg:flex space-x-4">{navOptions}</ul>
         </div>
         {/* Responsive Dropdown */}
-        {isOpen && <div className="lg:hidden mt-4">{navOptions}</div>}
+        {isOpen && <ul className="lg:hidden mt-4">{navOptions}</ul>}
       </nav>
     </div>
   );
