@@ -80,6 +80,8 @@ const Navber = () => {
                 <FaMinus />
               </button>
             </div>
+            <hr />
+
             <ul className="lg:hidden  mt-4 text-right px-2 ">{navOptions}</ul>
           </div>
         )}
