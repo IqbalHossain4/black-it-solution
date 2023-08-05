@@ -10,8 +10,8 @@ const AboutCompany = () => {
             <h4 className="text-[#0060ff] font-semibold text-md">
               About Company
             </h4>
-            <h1 className="font-bold my-4">You Can not Use Up Creativity.</h1>
-            <p className="text-sm">
+            <h1 className="font-bold mt-4">You Can not Use Up Creativity.</h1>
+            <p className="text-sm my-4">
               Does any industry face a more complex audience journey and
               marketing sales process than B2B technology? Consider the number
               of people who influence a sale, the length of the decision-making
@@ -24,16 +24,16 @@ const AboutCompany = () => {
                 <FaAward className="text-4xl text-[#0060ff]" />
                 <span>
                   <h5 className="font-bold">Experience</h5>
-                  <p className="text-sm mt-4">
+                  <p className="text-sm mt-2">
                     Our great team of more than 1400 software experts.
                   </p>
                 </span>
               </div>
-              <div className="flex gap-4 items-start mb-4">
+              <div className="flex gap-4 items-start mb-8">
                 <FaSurprise className="text-4xl text-[#0060ff]" />
                 <span>
                   <h5 className="font-bold">Quick Support</h5>
-                  <p className="text-sm mt-4">
+                  <p className="text-sm mt-2">
                     We’ll help you test bold new ideas while sharing your..
                   </p>
                 </span>

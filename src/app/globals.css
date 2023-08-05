@@ -112,6 +112,13 @@ button {
   background: var(--bg-nav);
 }
 
+.customBox {
+  border-radius: 0px 0px 5px 0px;
+}
+
+.btnWho {
+}
+
 /* ''''''''''''''''''tablet Start responsive Here */
 
 @media screen and (max-width: 1024px) {

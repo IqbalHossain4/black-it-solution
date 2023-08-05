@@ -35,7 +35,7 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div id="slide2" className="carousel-item relative md:h-[450px] w-full">
+      <div id="slide2" className="carousel-item relative md:h-[500px] w-full">
         <img src={"banner2.jpg"} className="w-full rounded" />
         <div className=" absolute left-0  h-full  bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
           <div className=" text-white ms-24 md:mt-24 mt-4">
@@ -66,7 +66,7 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div id="slide3" className="carousel-item relative md:h-[450px] w-full">
+      <div id="slide3" className="carousel-item relative md:h-[500px] w-full">
         <img src={"banner3.jpg"} className="w-full rounded" />
         <div className=" absolute left-0  h-full  bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
           <div className=" text-white ms-24 md:mt-24 mt-4">
