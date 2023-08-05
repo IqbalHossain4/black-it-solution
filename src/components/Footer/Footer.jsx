@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <div style={{ backgroundImage: "url('footer.jpeg" }}>
-      <div className="black__container py-20">
+      <div className="black__container pt-20">
         <div className="grid-1">
           <div className="flex flex-col gap-6 text-white">
             <div className="flex flex-col">
@@ -57,12 +57,12 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li>&gt;&gt; Managed IT services</li>
-              <li>&gt;&gt; Cloud Services</li>
-              <li>&gt;&gt; IT support & helpdesk</li>
-              <li>&gt;&gt; Cyber security</li>
-              <li>&gt;&gt; Custom Software</li>
-              <li>&gt;&gt; Free Consultation</li>
-              <li>&gt;&gt; Our Business Growth</li>
+              <li className="mt-2">&gt;&gt; Cloud Services</li>
+              <li className="mt-2">&gt;&gt; IT support & helpdesk</li>
+              <li className="mt-2">&gt;&gt; Cyber security</li>
+              <li className="mt-2">&gt;&gt; Custom Software</li>
+              <li className="mt-2">&gt;&gt; Free Consultation</li>
+              <li className="mt-2">&gt;&gt; Our Business Growth</li>
             </ul>
           </div>
           <div className="flex flex-col gap-6 text-white">
@@ -121,6 +121,23 @@ const Footer = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="mt-28 ">
+          <hr />
+          <div className="md:flex items-center justify-between text-white mt-4 pb-8">
+            <p>Copyright © 2023 by expert-themes. All Rights Reserved.</p>
+            <ul className="flex items-center gap-4">
+              <li className="border-e-2 pe-2">
+                <a href="#">About Us</a>
+              </li>
+              <li className="border-e-2 pe-2">
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

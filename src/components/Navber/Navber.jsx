@@ -26,7 +26,7 @@ const Navber = () => {
   }
   return (
     <div>
-      <nav className="black__container">
+      <nav className="black__container ">
         <div className="flex items-center justify-between">
           <div
             className={`lg:flex text-black ${
@@ -68,7 +68,7 @@ const Navber = () => {
         </div>
         {/* Responsive Dropdown */}
         {isOpen && (
-          <div className="absolute w-2/3 h-screen right-0 text-black bg-white">
+          <div className="absolute w-2/3 h-screen right-0 text-black bg-white z-[100]">
             <div className="flex items-center justify-around">
               <div className="flex flex-col items-center">
                 <div className="w-[60px] h-[60px]">
