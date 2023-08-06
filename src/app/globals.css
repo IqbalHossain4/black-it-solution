@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +22,8 @@ h2,
 h3,
 h4,
 h5 {
-  line-height: 1.2;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 h1 {
   font-size: 2.4rem;
@@ -72,6 +73,12 @@ button {
   gap: 10px;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
 .navBer {
   background-color: var(--bg-nav);
   padding: 15px 0;
@@ -112,11 +119,130 @@ button {
   background: var(--bg-nav);
 }
 
-.customBox {
-  border-radius: 0px 0px 5px 0px;
+.clientBox {
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+.clientBox:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 123, 255, 0.4);
 }
 
+.customBox {
+  cursor: pointer;
+  position: relative;
+  border-radius: 0px 0px 10px 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.customBox:hover {
+  background-color: #0060ff;
+  border-radius: 0px 0px 0px 10px;
+}
+.customBox:hover p {
+  color: white;
+}
+.customBox:hover h5 {
+  color: white;
+}
 .btnWho {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  transition-delay: 2s;
+  transition: all 0.4s ease-in-out;
+  background-color: #0060ff;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.customBox:hover .btnWho {
+  left: 0;
+  color: #0060ff;
+  transform: rotate(180deg);
+  background-color: white;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.serviceBox {
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+.serviceBox:hover p {
+  color: #6c757d;
+}
+
+.serviceBox:hover h5 {
+  color: white;
+}
+
+.serviceBox::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background: #141d38;
+}
+
+.serviceBox:hover::after {
+  height: 100%;
+  animation: serviceFram 0.4s ease;
+}
+@keyframes serviceFram {
+  0% {
+    height: 0;
+  }
+  100% {
+    color: white;
+    height: 100%;
+  }
+}
+
+.serviceBox::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  right: 0;
+  background: #0060ff;
+  border-radius: 0px 0px 0px 100%;
+}
+
+.serviceBox:hover::before {
+  width: 150px;
+  height: 100px;
+  animation: serviceFramTwo 0.4s ease;
+}
+
+@keyframes serviceFramTwo {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 150px;
+    height: 100px;
+  }
 }
 
 /* ''''''''''''''''''tablet Start responsive Here */
@@ -140,6 +266,9 @@ button {
   .grid-1 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ''''''''''''''Media query mobile version''''''''''' */
@@ -151,6 +280,9 @@ button {
     flex-direction: column;
   }
   .grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-2 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
