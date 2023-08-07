@@ -73,10 +73,10 @@ const WhoWeAre = () => {
         style={{
           backgroundImage: "url('rm378-08.jpg')",
         }}
-        className="relative bg-[#141d38] mt-64 w-full md:h-[1000px] h-auto md:pb-0 pb-20 md:mb-[700px] mb-24 bg-cover bg-center box-content"
+        className="md:relative bg-[#141d38] lg:mt-64 md:mt-64 mt-24  w-full md:h-[1000px] h-auto md:pb-0 pb-20 md:mb-[700px] mb-24 bg-cover bg-center box-content"
       >
         <div className="flex items-ceter justify-center ">
-          <div className="absolute -top-[20%]  lg:w-[1220px] flex-1">
+          <div className="md:absolute -top-[20%]  lg:w-[1220px] flex-1">
             <div
               style={{
                 backgroundImage: "url('a.jpg')",
@@ -110,7 +110,7 @@ const WhoWeAre = () => {
           </div>
         </div>
         {/* manage Who we are middle box */}
-        <div className="absolute lg:top-[2%] md:top-[5%] w-full flex items-center justify-center">
+        <div className="md:absolute lg:top-[2%]  w-full flex items-center justify-center">
           <div className="black__container   lg:pt-64 md:pt-44 pt-16">
             <h4 className="text-white font-semibold text-md text-center">
               Who We Are
@@ -118,7 +118,7 @@ const WhoWeAre = () => {
             <h1 className="font-bold md:text-3xl text-lg text-white my-4 text-center lg:px-72 md:px-34 px-2 ">
               We deal with the aspects of professional IT Services
             </h1>
-            <div className="grid-1 mt-16 px-16 lg:mb-[350px] md:mb-24">
+            <div className="grid-1 mt-16 px-16  md:mb-24 mb-24 ">
               {box.map(({ icon, title, desc }) => (
                 <div className="bg-white customBox  py-16 px-8 text-center">
                   <p className="flex items-center justify-center text-4xl text-black">
@@ -137,11 +137,11 @@ const WhoWeAre = () => {
         {/* manage Who we are last box */}
 
         <div className="md:flex items-center justify-center box-border">
-          <div className="absolute lg:top-[90%] md:top-[100%]  lg:w-[1400px] md:w-auto w-auto lg:h-[450px] md:h-auto  bg-[#0060FF] p-16  rounded-md box-border">
+          <div className="md:absolute lg:top-[90%] md:top-[100%]   lg:w-[1400px] md:w-auto w-auto lg:h-[450px] md:h-auto  bg-[#0060FF] p-16  rounded-md box-border">
             <h4 className="text-white font-semibold  text-md text-center">
               Special Services
             </h4>
-            <h1 className="font-semibold md:text-3xl text-lg text-white my-4 text-center md:px-40 px-2 ">
+            <h1 className="font-bold md:text-3xl text-lg text-white my-4 text-center lg:px-72 md:px-34 px-2 ">
               We deal with the aspects of professional IT Services
             </h1>
 

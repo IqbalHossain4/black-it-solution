@@ -2,7 +2,7 @@ import CustomBtnTwo from "../CustomBtn/CustomBtnTwo";
 
 const MeetUs = () => {
   return (
-    <div className="bg-[#0060ff] py-24 lg:mt-16 md:mt-[1150px]  mt-[1800px] mb-24   box-border">
+    <div className="bg-[#0060ff] py-24 lg:mt-16 md:mt-[1150px]  box-border">
       <div className="black__container">
         <div className="md:flex items-center justify-between">
           <div className="lg:px-24">
