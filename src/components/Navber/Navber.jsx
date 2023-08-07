@@ -19,11 +19,11 @@ const Navber = () => {
       <li>CONTACT US</li>
     </>
   );
-  if (isOpen == true) {
-    document.body.style.backgroundColor = "#191919";
-  } else {
-    document.body.style.backgroundColor = "white";
-  }
+  // if (isOpen == true) {
+  //   document.body.style.backgroundColor = "#191919";
+  // } else {
+  //   document.body.style.backgroundColor = "white";
+  // }
   return (
     <div>
       <nav className="black__container ">
