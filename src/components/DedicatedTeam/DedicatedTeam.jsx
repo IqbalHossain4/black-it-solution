@@ -50,11 +50,11 @@ const DedicatedTeam = () => {
           {options.map(({ name, title, image }) => (
             <div className="teamBox relative">
               <img src={image} alt="" />
-              <div className="md:absolute right-[5%] bottom-[-12%] text-right p-4  bg-white w-3/4 teamChildBox">
+              <div className="md:absolute right-[5%] bottom-[-12%] text-right p-4  bg-white md:w-3/4 teamChildBox">
                 <h2 className="font-bold text-xl">{name}</h2>
                 <p className="font-normal text-sm mt-1">{title}</p>
 
-                <div className="socials h-full md:absolute left-0 top-0 flex flex-col items-center justify-around text-white bg-[#0060ff]">
+                <div className="socials h-full md:absolute left-0 top-0 flex md:flex-col items-center justify-around text-white bg-[#0060ff]">
                   <FaFacebook />
                   <FaTwitter />
                   <FaInstagram />

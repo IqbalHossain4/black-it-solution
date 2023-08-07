@@ -564,4 +564,10 @@ button {
   .grid-3 {
     grid-template-columns: repeat(1, 1fr);
   }
+  .socials {
+    width: auto;
+    margin-top: 5px;
+    padding: 10px 0;
+    visibility: visible;
+  }
 }
