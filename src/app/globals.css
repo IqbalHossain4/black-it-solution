@@ -94,7 +94,7 @@ button {
   color: white;
   font-weight: 600;
   font-size: 12px;
-  z-index: 100;
+  z-index: 10;
   padding: 15px 25px;
   letter-spacing: 2px;
   position: relative;

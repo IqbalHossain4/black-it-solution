@@ -4,7 +4,7 @@ import CustomBtn from "../CustomBtn/CustomBtn";
 const Banner = () => {
   return (
     <div className="carousel w-full mt-12 rounded ">
-      <div id="slide1" className=" carousel-item relative md:h-[500px] w-full">
+      <div id="slide1" className=" carousel-item relative md:h-[500px]  w-full">
         <img src={"banner1.jpeg"} className="w-full  rounded" />
 
         <div className=" absolute left-0  h-full  bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
@@ -12,17 +12,19 @@ const Banner = () => {
             <h4 className="md:my-4 my-2 md:font-semibold font-normal ">
               IT Business Consulting
             </h4>
-            <h1 className="lg:font-extrabold md:font-semibold font-md lg:text-6xl mg:text-3xl text-2xl text-white">
+            <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-normal lg:text-6xl mg:text-3xl text-sm text-white">
               Our Agency Provide
             </h1>
-            <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-md lg:text-6xl mg:text-3xl text-2xl text-white">
+            <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-normal lg:text-6xl mg:text-3xl text-sm text-white">
               Best IT Solution
             </h1>
-            <p className="md:text-md text-xs md:my-4  my-2">
-              we are 100+ professional software engineers with more than
-              <br />
-              10 years of experience in delivering superior products
-            </p>
+            <div className="md:block hidden">
+              <p className="md:text-md text-xs md:my-4  my-2">
+                we are 100+ professional software engineers with more than
+                <br />
+                10 years of experience in delivering superior products
+              </p>
+            </div>
             <p className="mt-8">
               <CustomBtn title={"Learn More"} />
             </p>
@@ -44,17 +46,19 @@ const Banner = () => {
             <h4 className="md:my-4 my-2 md:font-semibold font-normal ">
               IT Business Consulting
             </h4>
-            <h1 className="lg:font-extrabold md:font-semibold font-md lg:text-6xl mg:text-3xl text-2xl text-white">
+            <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-normal lg:text-6xl mg:text-3xl text-sm text-white">
               Our Agency Provide
             </h1>
             <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-md lg:text-6xl mg:text-3xl text-2xl text-white">
               Best IT Solution
             </h1>
-            <p className="md:text-md text-xs md:my-4  my-2">
-              we are 100+ professional software engineers with more than
-              <br />
-              10 years of experience in delivering superior products
-            </p>
+            <div className="md:block hidden">
+              <p className="md:text-md text-xs md:my-4  my-2">
+                we are 100+ professional software engineers with more than
+                <br />
+                10 years of experience in delivering superior products
+              </p>
+            </div>
             <p className="mt-8">
               <CustomBtn title={"Learn More"} />
             </p>
@@ -77,17 +81,19 @@ const Banner = () => {
             <h4 className="md:my-4 my-2 md:font-semibold font-normal ">
               IT Business Consulting
             </h4>
-            <h1 className="lg:font-extrabold md:font-semibold font-md lg:text-6xl mg:text-3xl text-2xl text-white">
+            <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-normal lg:text-6xl mg:text-3xl text-sm text-white">
               Our Agency Provide
             </h1>
             <h1 className="lg:font-extrabold md:mt-4 mt-2 md:font-semibold font-md lg:text-6xl mg:text-3xl text-2xl text-white">
               Best IT Solution
             </h1>
-            <p className="md:text-md text-xs md:my-4  my-2">
-              we are 100+ professional software engineers with more than
-              <br />
-              10 years of experience in delivering superior products
-            </p>
+            <div className="md:block hidden">
+              <p className="md:text-md text-xs md:my-4  my-2">
+                we are 100+ professional software engineers with more than
+                <br />
+                10 years of experience in delivering superior products
+              </p>
+            </div>
             <p className="mt-8">
               <CustomBtn title={"Learn More"} />
             </p>

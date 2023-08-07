@@ -19,11 +19,7 @@ const Navber = () => {
       <li>CONTACT US</li>
     </>
   );
-  // if (isOpen == true) {
-  //   document.body.style.backgroundColor = "#191919";
-  // } else {
-  //   document.body.style.backgroundColor = "white";
-  // }
+
   return (
     <div>
       <nav className="black__container ">
@@ -68,13 +64,15 @@ const Navber = () => {
         </div>
         {/* Responsive Dropdown */}
         {isOpen && (
-          <div className="absolute w-2/3 h-screen right-0 text-black bg-white z-[100]">
+          <div className="absolute w-2/3 h-screen right-0 text-white bg-black z-[90] ">
             <div className="flex items-center justify-around">
               <div className="flex flex-col items-center">
-                <div className="w-[60px] h-[60px]">
+                <div className="w-[40px] h-[40px]">
                   <img src={"logo.png"} alt="black_it_solutions" />
                 </div>
-                <p className="text-xs text-black">IT Service & Technology </p>
+                <p className="text-xs text-white mb-4">
+                  IT Service & Technology{" "}
+                </p>
               </div>
               <button onClick={() => setIsOpen(false)} className="">
                 <FaMinus />
