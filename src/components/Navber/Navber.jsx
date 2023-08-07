@@ -21,8 +21,8 @@ const Navber = () => {
   );
 
   return (
-    <div>
-      <nav className="black__container ">
+    <div className=" my-4">
+      <nav className="black__container">
         <div className="flex items-center justify-between">
           <div
             className={`lg:flex text-black ${

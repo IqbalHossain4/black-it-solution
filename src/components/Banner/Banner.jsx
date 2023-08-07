@@ -3,7 +3,7 @@ import CustomBtn from "../CustomBtn/CustomBtn";
 
 const Banner = () => {
   return (
-    <div className="carousel w-full mt-12 rounded ">
+    <div className="carousel w-full lg:mt-0 mt-12 rounded ">
       <div id="slide1" className=" carousel-item relative md:h-[500px]  w-full">
         <img src={"banner1.jpeg"} className="w-full  rounded" />
 
