@@ -77,7 +77,11 @@ button {
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .navBer {
@@ -454,6 +458,66 @@ button {
   }
 }
 
+/* manage team box */
+
+.teamBox {
+  z-index: 40;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.teamBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: 80;
+  background: rgb(249, 237, 237);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(20, 29, 56, 0.9) 100%
+  );
+}
+
+.teamBox:hover img {
+  opacity: 0.8;
+  transform: scale(1.03);
+}
+.teamBox:hover::after {
+  width: 100%;
+}
+
+.teamChildBox {
+  z-index: 100;
+  border-left: 2px solid #0060ff;
+}
+
+.socials {
+  width: 0px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.teamBox:hover .socials {
+  width: 30px;
+  visibility: visible;
+  animation: teamSocial 0.3s ease-in-out;
+}
+
+@keyframes teamSocial {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 30px;
+    visibility: visible;
+  }
+}
+
 /* ''''''''''''''''''tablet Start responsive Here */
 
 @media screen and (max-width: 1024px) {
@@ -478,6 +542,9 @@ button {
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ''''''''''''''Media query mobile version''''''''''' */
@@ -492,6 +559,9 @@ button {
     grid-template-columns: repeat(1, 1fr);
   }
   .grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-3 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
