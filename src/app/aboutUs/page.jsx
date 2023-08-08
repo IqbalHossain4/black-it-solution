@@ -1,12 +1,13 @@
+"use client";
 import AboutCompany from "@/components/AboutCompany/AboutCompany";
 import CustomBtnTwo from "@/components/CustomBtn/CustomBtnTwo";
 import Link from "next/link";
 import CountUp, { useCountUp } from "react-countup";
 
-export const metadata = {
-  title: "About Us || IT Solutions",
-  description: "Black IT Solution",
-};
+// export const metadata = {
+//   title: "About Us || IT Solutions",
+//   description: "Black IT Solution",
+// };
 
 const AboutUs = () => {
   useCountUp({
