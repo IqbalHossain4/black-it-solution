@@ -3,6 +3,11 @@ import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "Services || IT Solutions",
+  description: "Black IT Solution",
+};
+
 const services = () => {
   return (
     <div>
