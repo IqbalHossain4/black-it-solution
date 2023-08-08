@@ -1,4 +1,3 @@
-"use client";
 import AboutCompany from "@/components/AboutCompany/AboutCompany";
 import CustomBtnTwo from "@/components/CustomBtn/CustomBtnTwo";
 import Link from "next/link";
