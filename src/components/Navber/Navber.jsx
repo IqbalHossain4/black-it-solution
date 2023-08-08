@@ -10,9 +10,15 @@ const Navber = () => {
   };
   const navOptions = (
     <>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>SERVICES</li>
+      <li>
+        <Link href="/">HOME</Link>
+      </li>
+      <li>
+        <Link href="/aboutUs">ABOUT</Link>
+      </li>
+      <li>
+        <Link href="services"> SERVICES</Link>
+      </li>
       <li>PROJECTS</li>
       <li>SHOP</li>
       <li>BLOG</li>
@@ -29,14 +35,16 @@ const Navber = () => {
               isOpen == true ? " hidden" : "block"
             }`}
           >
-            <div className="flex flex-col items-center">
-              <div className="w-[50px] h-[50px]">
-                <img src={"logo.png"} alt="black_it_solutions" />
+            <Link href="/">
+              <div className="flex flex-col items-center">
+                <div className="w-[50px] h-[50px]">
+                  <img src={"logo.png"} alt="black_it_solutions" />
+                </div>
+                <p className="text-xs text-black font-semibold">
+                  IT Service & Technology{" "}
+                </p>
               </div>
-              <p className="text-xs text-black font-semibold">
-                IT Service & Technology{" "}
-              </p>
-            </div>
+            </Link>
           </div>
           <button
             className={`focus:outline-none lg:hidden ${
@@ -68,7 +76,9 @@ const Navber = () => {
             <div className="flex items-center justify-around">
               <div className="flex flex-col items-center">
                 <div className="w-[40px] h-[40px]">
-                  <img src={"logo.png"} alt="black_it_solutions" />
+                  <Link href="/">
+                    <img src={"logo.png"} alt="black_it_solutions" />
+                  </Link>
                 </div>
                 <p className="text-xs text-white mb-4">
                   IT Service & Technology{" "}
