@@ -20,7 +20,9 @@ const AboutUs = () => {
           <Link href="/">Home </Link> : <Link href="aboutUs"> About Us</Link>
         </p>
       </div>
-      <AboutCompany />
+      <div className="mt-24">
+        <AboutCompany />
+      </div>
       <div className="bg-[#0060ff] w-full mt-[150px]">
         <div className="black__container relative  mb-24">
           <div className="w-full md:absolute top-[-10%] py-12 bg-[#E7F0FF] rounded-3xl  drop-shadow-md">
