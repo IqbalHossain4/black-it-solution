@@ -2,6 +2,10 @@ import CaseStudies from "@/components/CaseStudies/CaseStudies";
 import Projects from "@/components/page/Projects/Projects";
 import Link from "next/link";
 import React from "react";
+export const metadata = {
+  title: "Our Projects || IT Solutions",
+  description: "Black IT Solution",
+};
 
 const projects = () => {
   return (

@@ -1,6 +1,9 @@
 import ContactUs from "@/components/page/ContactUs/ContactUs";
 import Link from "next/link";
-
+export const metadata = {
+  title: "Contact Us || IT Solutions",
+  description: "Black IT Solution",
+};
 const page = () => {
   return (
     <div className="mb-24">
