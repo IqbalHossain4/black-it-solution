@@ -1,4 +1,4 @@
-import CustomBtn from "../CustomBtn/CustomBtn";
+import CustomBtn from "../../CustomBtn/CustomBtn";
 
 const ContactUs = () => {
   return (

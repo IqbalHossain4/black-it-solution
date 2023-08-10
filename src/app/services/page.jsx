@@ -1,4 +1,4 @@
-import ContactUs from "@/components/ContactUs/ContactUs";
+import ContactUs from "@/components/page/ContactUs/ContactUs";
 import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
 import Link from "next/link";
 import React from "react";

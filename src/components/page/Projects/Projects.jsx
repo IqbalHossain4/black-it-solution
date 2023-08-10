@@ -1,8 +1,7 @@
+import CustomBtn from "@/components/CustomBtn/CustomBtn";
 import { FaArrowRight, FaSearch } from "react-icons/fa";
-import CustomBtn from "../CustomBtn/CustomBtn";
-import Sponsor from "../Sponsors/Sponsor";
 
-const CaseStudies = () => {
+const Projects = () => {
   const caseBox = [
     {
       images: "https://img.lovepik.com//photo/50084/9672.jpg_300.jpg",
@@ -42,7 +41,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <div className="py-24 bg-[#F5F5F5] relative  ">
+    <div className="py-24">
       <h4 className="text-[#0060ff] font-semibold text-md text-center ">
         Latest Case Studies
       </h4>
@@ -82,18 +81,13 @@ const CaseStudies = () => {
             We Have Done More Than 1K Projects in Last 3 Years, With 100%
             Satisfaction.
           </h4>
-          <div className="my-8">
+          <div className="mt-8">
             <CustomBtn title={"View All"} />
           </div>
-        </div>
-      </div>
-      <div className="w-full flex items-center justify-center">
-        <div className="md:absolute mt-16 bottom-[-7%] ">
-          <Sponsor />
         </div>
       </div>
     </div>
   );
 };
 
-export default CaseStudies;
+export default Projects;

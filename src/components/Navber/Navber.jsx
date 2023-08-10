@@ -19,10 +19,13 @@ const Navber = () => {
       <li>
         <Link href="services"> SERVICES</Link>
       </li>
-      <li>PROJECTS</li>
+      <li>
+        <Link href="/projects">PROJECTS</Link>
+      </li>
       <li>SHOP</li>
-      <li>BLOG</li>
-      <li>CONTACT US</li>
+      <li>
+        <Link href="/contactus">CONTACT US</Link>
+      </li>
     </>
   );
 
